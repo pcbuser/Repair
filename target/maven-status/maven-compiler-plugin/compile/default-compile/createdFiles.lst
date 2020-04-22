@@ -1,0 +1,11 @@
+carrepair\RepairProcessingRepository.class
+carrepair\AbstractEvent.class
+carrepair\RepairProcessing.class
+carrepair\AcceptCanceled.class
+carrepair\AcceptPlaced.class
+carrepair\config\kafka\KafkaProcessor.class
+carrepair\RepairCanceled.class
+carrepair\PolicyHandler.class
+carrepair\RepairPlaced.class
+carrepair\Application.class
+carrepair\RepairProcessingController.class
