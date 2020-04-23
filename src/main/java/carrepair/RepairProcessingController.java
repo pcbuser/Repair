@@ -16,8 +16,8 @@ import java.util.List;
   @RequestMapping(method= RequestMethod.PATCH, path="/cancel")
   public void repairCancel(@RequestBody  RepairProcessing repairProcessing) {
 
-   System.out.println("log : "+repairProcessing.getStatus());
-   System.out.println("log : "+repairProcessing.getId());
+   //System.out.println("log : "+repairProcessing.getStatus());
+   //System.out.println("log : "+repairProcessing.getId().toString());
 
    RepairProcessing rp = new RepairProcessing();
    rp.setStatus(repairProcessing.getStatus());
