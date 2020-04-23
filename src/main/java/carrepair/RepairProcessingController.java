@@ -13,7 +13,8 @@ import java.util.List;
   RepairProcessingRepository repairProcessingRepository;
 
   //@RequestMapping(method= RequestMethod.PATCH, path="/repairProcessings")
-  @RequestMapping(method= RequestMethod.PATCH, path="/repairProcess")
+  @RequestMapping(method= RequestMethod.PATCH, path="/repairProcessings/cancel")
+  //@RequestMapping(method= RequestMethod.PATCH, path="/cancel")
   public void repairCancel(@RequestBody  RepairProcessing repairProcessing) {
 
    //System.out.println("log : "+repairProcessing.getStatus());
@@ -22,9 +23,7 @@ import java.util.List;
    RepairProcessing rp = new RepairProcessing();
    rp.setStatus(repairProcessing.getStatus());
    rp.setId(repairProcessing.getId());
-   /*RepairProcessing repairProcessing = new RepairProcessing();
-   repairProcessing.setAcceptid(acceptCanceled.getId());
-   repairProcessing.setStatus(acceptCanceled.getStatus());*/
+
 
    repairProcessingRepository.save(rp);
   }
