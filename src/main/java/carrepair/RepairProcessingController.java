@@ -13,7 +13,7 @@ import java.util.List;
   RepairProcessingRepository repairProcessingRepository;
 
   //@RequestMapping(method= RequestMethod.PATCH, path="/repairProcessings")
-  @RequestMapping(method= RequestMethod.PATCH, path="/repairProcessings")
+  @RequestMapping(method= RequestMethod.PATCH, path="/repairProcess")
   public void repairCancel(@RequestBody  RepairProcessing repairProcessing) {
 
    //System.out.println("log : "+repairProcessing.getStatus());
